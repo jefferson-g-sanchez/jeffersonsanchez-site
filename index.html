@@ -1,112 +1,354 @@
 <!DOCTYPE html>
-<!-- auto-deploy test -->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jefferson Sanchez</title>
+  <title>Jefferson G. Sanchez — MIT · 3x Founder · Bimrock AI</title>
+  <meta name="description" content="Jefferson G. Sanchez — MIT-educated entrepreneur and engineer. Co-founder of Bimrock AI. Building the future of human-machine collaboration for the construction industry. Miami, Florida.">
+  <meta property="og:title" content="Jefferson G. Sanchez">
+  <meta property="og:description" content="MIT · 3x Founder — Building the future of human-machine collaboration for the construction industry.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jeffersonsanchez.com">
+  <meta property="og:image" content="https://jeffersonsanchez.com/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Jefferson G. Sanchez">
+  <meta name="twitter:description" content="MIT · 3x Founder · Co-founder, Bimrock AI · Miami, FL">
+  <link rel="canonical" href="https://jeffersonsanchez.com">
+  <link rel="stylesheet" href="styles.css">
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body {
-      background: #0a0a0a;
-      color: #e8e8e8;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
-      min-height: 100vh;
+    /* ── HERO ── */
+    .hero {
+      min-height: calc(100vh - 50px);
       display: flex;
       flex-direction: column;
-      align-items: center;
       justify-content: center;
-      padding: 2rem;
+      border-bottom: 1px solid var(--border);
+      position: relative;
+      overflow: hidden;
     }
-
-    .container {
-      max-width: 640px;
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 80% 60% at 10% 60%, rgba(200,169,110,0.04) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero__inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 6rem 1.5rem 4rem;
       width: 100%;
-      text-align: center;
     }
-
-    h1 {
-      font-size: 2.75rem;
-      font-weight: 600;
-      letter-spacing: -0.02em;
-      color: #ffffff;
-      margin-bottom: 0.5rem;
-    }
-
-    .subtitle {
-      font-size: 1rem;
-      color: #888;
-      letter-spacing: 0.01em;
-      margin-bottom: 2rem;
-      line-height: 1.5;
-    }
-
-    .divider {
-      width: 40px;
-      height: 1px;
-      background: #2a2a2a;
-      margin: 2rem auto;
-    }
-
-    .bio {
-      font-size: 0.95rem;
-      color: #aaa;
-      line-height: 1.75;
+    .hero__location {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.66rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-3);
+      display: block;
       margin-bottom: 2.5rem;
     }
-
-    .links {
+    .hero__name {
+      font-size: clamp(4rem, 11vw, 9.5rem);
+      font-weight: 300;
+      line-height: 0.93;
+      color: var(--white);
+      letter-spacing: -0.03em;
+      margin-bottom: 2.25rem;
+    }
+    .hero__name em {
+      font-style: italic;
+      color: var(--accent);
+    }
+    .hero__rule {
+      width: 56px;
+      height: 1px;
+      background: var(--accent);
+      margin-bottom: 2.25rem;
+    }
+    .hero__tagline {
+      font-size: clamp(1rem, 1.8vw, 1.2rem);
+      line-height: 1.72;
+      color: var(--text-2);
+      margin-bottom: 2rem;
+      max-width: 520px;
+    }
+    .hero__pills {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .hero__pill {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--text-3);
+      padding: 0.25rem 0.75rem;
+      border: 1px solid var(--border);
+    }
+    .hero__pill--accent {
+      color: var(--accent);
+      border-color: var(--accent-mid);
+      background: var(--accent-low);
+    }
+    /* ── BIO BRIEF ── */
+    .brief {
+      border-bottom: 1px solid var(--border);
+    }
+    .brief__inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 4rem 1.5rem;
+    }
+    .brief__text {
+      font-size: 1.2rem;
+      line-height: 1.82;
+      color: var(--text-2);
+      max-width: 700px;
+    }
+    /* ── PAGE GRID ── */
+    .page-grid-section {
+      border-bottom: 1px solid var(--border);
+    }
+    .page-grid-section .container--wide {
+      padding-top: 4rem;
+      padding-bottom: 0;
+    }
+    .page-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: var(--border);
+      margin-top: 0;
+    }
+    .page-card {
+      background: var(--bg);
+      padding: 2.25rem 2rem;
+      text-decoration: none;
       display: flex;
       flex-direction: column;
-      gap: 0.75rem;
-      align-items: center;
-      margin-bottom: 3rem;
+      gap: 0.5rem;
+      min-height: 200px;
+      transition: background 0.15s;
+      position: relative;
     }
-
-    .links a {
-      color: #c8c8c8;
-      text-decoration: none;
+    .page-card:hover { background: var(--bg-card); }
+    .page-card:hover .page-card__name { color: var(--accent); }
+    .page-card:hover .page-card__arrow { opacity: 1; transform: translateX(4px); }
+    .page-card__num {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.58rem;
+      letter-spacing: 0.12em;
+      color: var(--text-3);
+    }
+    .page-card__name {
+      font-size: 1.7rem;
+      font-weight: 400;
+      color: var(--white);
+      line-height: 1.1;
+      transition: color 0.15s;
+      margin-top: 0.25rem;
+    }
+    .page-card__desc {
       font-size: 0.9rem;
-      letter-spacing: 0.02em;
-      padding: 0.5rem 1.25rem;
-      border: 1px solid #222;
-      border-radius: 4px;
-      transition: border-color 0.2s, color 0.2s;
-      min-width: 240px;
+      color: var(--text-2);
+      line-height: 1.58;
+      flex: 1;
+      margin-top: 0.4rem;
+    }
+    .page-card__arrow {
+      font-size: 1rem;
+      color: var(--accent);
+      opacity: 0;
+      transition: opacity 0.15s, transform 0.15s;
+      display: inline-block;
+      align-self: flex-start;
+      margin-top: 0.5rem;
     }
 
-    .links a:hover {
-      border-color: #555;
-      color: #fff;
+    @media (max-width: 900px) {
+      .page-grid { grid-template-columns: repeat(2, 1fr); }
     }
-
-    footer {
-      font-size: 0.78rem;
-      color: #444;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
+    @media (max-width: 480px) {
+      .page-grid { grid-template-columns: 1fr; }
+      .hero__name { font-size: 3.5rem; }
     }
   </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Jefferson G. Sanchez",
+    "givenName": "Jefferson",
+    "additionalName": "G.",
+    "familyName": "Sanchez",
+    "url": "https://jeffersonsanchez.com",
+    "jobTitle": ["Co-Founder", "CEO", "GTM Engineer"],
+    "description": "MIT-educated entrepreneur and engineer building AI-powered BIM automation for the construction industry.",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Bimrock AI",
+      "url": "https://bimrock.ai"
+    },
+    "alumniOf": [
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "Massachusetts Institute of Technology",
+        "url": "https://mit.edu"
+      },
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "University of Michigan",
+        "url": "https://umich.edu"
+      }
+    ],
+    "hasCredential": {
+      "@type": "EducationalOccupationalCredential",
+      "name": "LEED Accredited Professional"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Miami",
+      "addressRegion": "Florida",
+      "addressCountry": "US"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/jeffersonsanchez",
+      "https://twitter.com/jfsnchz",
+      "https://www.instagram.com/jfsnchz",
+      "https://github.com/jeffersonsanchez",
+      "https://www.researchgate.net/profile/Jefferson-Sanchez",
+      "https://medium.com/@jeffersonsanchez",
+      "https://about.me/jeffersonsanchez",
+      "https://linktr.ee/jeffersonsanchez",
+      "https://www.crunchbase.com/person/jefferson-sanchez",
+      "https://bimrock.ai",
+      "https://the3dwebcoder.com"
+    ]
+  }
+  </script>
 </head>
 <body>
-  <div class="container">
-    <h1>Jefferson Sanchez</h1>
-    <p class="subtitle">GTM Engineer &middot; Co-Founder at Bimrock AI &middot; Builder</p>
 
-    <div class="divider"></div>
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">JGS</a>
+      <div class="nav__links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="bio.html">Bio</a>
+        <a href="projects.html">Projects</a>
+        <a href="press.html">Press</a>
+        <a href="links.html">Links</a>
+        <a href="social.html">Social</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
 
-    <p class="bio">
-      Jefferson builds go-to-market infrastructure for construction tech. Co-founder at Bimrock AI, building AI-powered BIM automation tools for MEP engineers. Contributor to The 3D Web Coder.
-    </p>
+  <main>
 
-    <nav class="links">
-      <a href="https://bimrock.ai" target="_blank" rel="noopener">Bimrock AI</a>
-      <a href="https://the3dwebcoder.com" target="_blank" rel="noopener">The 3D Web Coder</a>
-      <a href="https://linkedin.com/in/jeffersonsanchez" target="_blank" rel="noopener">LinkedIn</a>
-    </nav>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__inner">
+        <span class="hero__location anim-fade anim-d1">Miami, Florida</span>
+        <h1 class="hero__name anim-fade anim-d2">Jefferson<br><em>G. Sanchez</em></h1>
+        <div class="hero__rule anim-fade anim-d3"></div>
+        <p class="hero__tagline anim-fade anim-d4">
+          MIT &middot; 3x Founder &mdash; Building the future of<br>
+          human-machine collaboration for the construction industry.
+        </p>
+        <div class="hero__pills anim-fade anim-d5">
+          <span class="hero__pill hero__pill--accent">Co-Founder &amp; CEO, Bimrock AI</span>
+          <span class="hero__pill">LEED AP</span>
+          <span class="hero__pill">MIT</span>
+          <span class="hero__pill">University of Michigan</span>
+        </div>
+      </div>
+    </section>
 
-    <footer>Coming soon &mdash; full site under construction</footer>
-  </div>
+    <!-- BRIEF BIO -->
+    <section class="brief">
+      <div class="brief__inner">
+        <div class="section-label">About</div>
+        <p class="brief__text anim-fade">
+          Jefferson Sanchez is an MIT-educated entrepreneur and engineer at the intersection of construction technology and artificial intelligence. He is co-founder and CEO of <a href="https://bimrock.ai" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent-mid)">Bimrock AI</a>, developing AI-powered BIM automation tools for MEP engineers, and a contributor to <a href="https://the3dwebcoder.com" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent-mid)">The 3D Web Coder</a>. With a background spanning environmental research, sustainable design, and multiple venture builds, Jefferson brings a systems-level perspective to one of the world's oldest industries.
+        </p>
+      </div>
+    </section>
+
+    <!-- PAGE NAVIGATION GRID -->
+    <section class="page-grid-section">
+      <div class="container--wide">
+        <div class="section-label">Explore</div>
+      </div>
+      <div style="max-width:1100px;margin:0 auto;padding:0 1.5rem 0">
+        <div class="page-grid">
+          <a href="about.html" class="page-card anim-fade anim-d1">
+            <span class="page-card__num">01</span>
+            <span class="page-card__name">About</span>
+            <span class="page-card__desc">Education, career overview, credentials, and research — structured for Knowledge Panel.</span>
+            <span class="page-card__arrow">→</span>
+          </a>
+          <a href="bio.html" class="page-card anim-fade anim-d2">
+            <span class="page-card__num">02</span>
+            <span class="page-card__name">Biography</span>
+            <span class="page-card__desc">Long-form narrative covering early life, every venture, research, and current work.</span>
+            <span class="page-card__arrow">→</span>
+          </a>
+          <a href="projects.html" class="page-card anim-fade anim-d3">
+            <span class="page-card__num">03</span>
+            <span class="page-card__name">Projects</span>
+            <span class="page-card__desc">Bimrock AI, The 3D Web Coder, The Union Muay Thai, and past ventures.</span>
+            <span class="page-card__arrow">→</span>
+          </a>
+          <a href="press.html" class="page-card anim-fade anim-d4">
+            <span class="page-card__num">04</span>
+            <span class="page-card__name">Press</span>
+            <span class="page-card__desc">MIT News, EDF Climate Corps, academic affiliations, and podcast appearances.</span>
+            <span class="page-card__arrow">→</span>
+          </a>
+          <a href="links.html" class="page-card anim-fade anim-d4">
+            <span class="page-card__num">05</span>
+            <span class="page-card__name">Links</span>
+            <span class="page-card__desc">All online profiles across social, academic, professional, and writing platforms.</span>
+            <span class="page-card__arrow">→</span>
+          </a>
+          <a href="social.html" class="page-card anim-fade anim-d5">
+            <span class="page-card__num">06</span>
+            <span class="page-card__name">Social</span>
+            <span class="page-card__desc">Personal side — interests, lifestyle, and social media presence.</span>
+            <span class="page-card__arrow">→</span>
+          </a>
+          <a href="contact.html" class="page-card anim-fade anim-d6" style="background:var(--bg-card)">
+            <span class="page-card__num">07</span>
+            <span class="page-card__name">Contact</span>
+            <span class="page-card__desc">Book a meeting directly or get in touch by email.</span>
+            <span class="page-card__arrow">→</span>
+          </a>
+          <div class="page-card" style="pointer-events:none;opacity:0.15">
+            <span class="page-card__desc" style="font-family:'DM Mono',monospace;font-size:0.6rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-3)">More coming</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <p>© 2026 Jefferson G. Sanchez &nbsp;·&nbsp; <a href="https://jeffersonsanchez.com">jeffersonsanchez.com</a> &nbsp;·&nbsp; <a href="https://bimrock.ai" target="_blank" rel="noopener">bimrock.ai</a> &nbsp;·&nbsp; <a href="https://the3dwebcoder.com" target="_blank" rel="noopener">the3dwebcoder.com</a></p>
+    </div>
+  </footer>
+
+  <script>
+    const p = location.pathname.split('/').pop() || 'index.html';
+    document.querySelectorAll('.nav__links a').forEach(a => {
+      if (a.getAttribute('href') === p) a.setAttribute('aria-current', 'page');
+    });
+  </script>
+
 </body>
 </html>

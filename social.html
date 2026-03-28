@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social — Jefferson G. Sanchez</title>
+  <meta name="description" content="Personal and social profile for Jefferson G. Sanchez — interests, lifestyle, Muay Thai, and social media presence.">
+  <meta property="og:title" content="Social — Jefferson G. Sanchez">
+  <meta property="og:description" content="The personal side — interests, Muay Thai, Miami life, and where to follow along.">
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://jeffersonsanchez.com/social">
+  <link rel="canonical" href="https://jeffersonsanchez.com/social">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .social-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: start;
+    }
+    .social-links-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1px;
+      background: var(--border);
+      margin-top: 2.5rem;
+    }
+    .social-link-card {
+      background: var(--bg-card);
+      padding: 1.5rem;
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      transition: background 0.15s;
+    }
+    .social-link-card:hover { background: var(--bg-card-2); }
+    .social-link-card:hover .social-link-card__handle { color: var(--accent); }
+    .social-link-card__platform {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.58rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--text-3);
+    }
+    .social-link-card__handle {
+      font-size: 1.2rem;
+      color: var(--white);
+      line-height: 1.2;
+      transition: color 0.15s;
+    }
+    .photo-note {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-3);
+      text-align: center;
+      padding: 1rem;
+      border-top: 1px solid var(--border);
+    }
+    .interest-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+    .interest-list li {
+      display: flex;
+      align-items: baseline;
+      gap: 1rem;
+      padding: 0.85rem 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 1.1rem;
+      color: var(--text);
+    }
+    .interest-list li:first-child { border-top: 1px solid var(--border); }
+    .interest-list li .interest-tag {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.56rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-3);
+      white-space: nowrap;
+      min-width: 90px;
+    }
+    @media (max-width: 800px) {
+      .social-layout { grid-template-columns: 1fr; gap: 3rem; }
+      .social-links-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 420px) {
+      .social-links-grid { grid-template-columns: 1fr; }
+      .photo-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">JGS</a>
+      <div class="nav__links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="bio.html">Bio</a>
+        <a href="projects.html">Projects</a>
+        <a href="press.html">Press</a>
+        <a href="links.html">Links</a>
+        <a href="social.html">Social</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container--wide">
+
+      <header class="page-header anim-fade">
+        <span class="eyebrow">Personal</span>
+        <h1>Social</h1>
+        <p class="lead">Beyond the ventures — Muay Thai, Miami, building things worth building, and the people worth building them with.</p>
+      </header>
+
+      <div class="social-layout">
+
+        <!-- LEFT: PHOTOS + SOCIAL LINKS -->
+        <div class="anim-fade anim-d1">
+          <div class="section-label">Photos</div>
+
+          <div class="photo-grid">
+            <div class="photo-placeholder">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              <span>Photo coming soon</span>
+            </div>
+            <div class="photo-placeholder">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              <span>Photo coming soon</span>
+            </div>
+            <div class="photo-placeholder">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              <span>Photo coming soon</span>
+            </div>
+            <div class="photo-placeholder">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              <span>Photo coming soon</span>
+            </div>
+          </div>
+          <p class="photo-note">Photos to be added by Jeff</p>
+
+          <div class="section-label" style="margin-top:3rem">Follow</div>
+          <div class="social-links-grid">
+            <a href="https://instagram.com/jfsnchz" target="_blank" rel="noopener" class="social-link-card">
+              <span class="social-link-card__platform">Instagram</span>
+              <span class="social-link-card__handle">@jfsnchz</span>
+            </a>
+            <a href="https://tiktok.com/@jfsnchz" target="_blank" rel="noopener" class="social-link-card">
+              <span class="social-link-card__platform">TikTok</span>
+              <span class="social-link-card__handle">@jfsnchz</span>
+            </a>
+            <a href="https://youtube.com/@jeffersonsanchez" target="_blank" rel="noopener" class="social-link-card">
+              <span class="social-link-card__platform">YouTube</span>
+              <span class="social-link-card__handle">Jefferson Sanchez</span>
+            </a>
+            <a href="https://twitch.tv/jeffersonsanchez" target="_blank" rel="noopener" class="social-link-card">
+              <span class="social-link-card__platform">Twitch</span>
+              <span class="social-link-card__handle">jeffersonsanchez</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- RIGHT: PERSONAL BIO -->
+        <div class="anim-fade anim-d2">
+          <div class="section-label">About</div>
+
+          <div class="prose" style="margin-bottom:3rem">
+            <p>
+              Jefferson Sanchez is a builder — of companies, of systems, and of communities. Away from the laptop, he's on the mats. As the founder of <a href="https://theunionmuaythaiboxing.com" target="_blank" rel="noopener">The Union Muay Thai Boxing</a>, Jefferson trains and competes in Muay Thai, drawn to the discipline for the same reasons he's drawn to engineering: precise technique, continuous improvement, and no shortcuts.
+            </p>
+            <p>
+              Based in Miami, he's deeply embedded in the city's energy — its construction boom, its Latin American entrepreneurial culture, its proximity to both South American markets and US tech corridors. Miami isn't just where he lives; it's the context that sharpens his perspective on urban development, climate resilience, and the future of the built environment.
+            </p>
+            <p>
+              Jefferson moves between technical work and human conversation fluidly. He's as comfortable discussing MEP coordination workflows as he is talking about the cultural dynamics of the construction industry, the mechanics of a good teep kick, or the first principles behind why most renovation projects fail. He reads widely, builds persistently, and trains daily.
+            </p>
+            <p>
+              Outside of work and training, he's interested in the intersection of AI and physical labor — not as a displacement thesis, but as a collaboration model. He believes the most interesting problems in construction technology aren't purely software problems. They're coordination problems, trust problems, and workflow problems that software can help solve.
+            </p>
+          </div>
+
+          <div class="section-label">Interests</div>
+          <ul class="interest-list">
+            <li>
+              <span class="interest-tag">Martial Arts</span>
+              Muay Thai — training, competition, and community through The Union
+            </li>
+            <li>
+              <span class="interest-tag">Technology</span>
+              AI, BIM automation, 3D web, and construction tech
+            </li>
+            <li>
+              <span class="interest-tag">Environment</span>
+              Sustainable design, green building, LEED standards
+            </li>
+            <li>
+              <span class="interest-tag">Entrepreneurship</span>
+              Venture building, GTM strategy, product-market fit
+            </li>
+            <li>
+              <span class="interest-tag">Research</span>
+              Structural biology, environmental economics, intelligent systems
+            </li>
+            <li>
+              <span class="interest-tag">Miami</span>
+              Urban development, Latin American culture, coastal resilience
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <p>© 2026 Jefferson G. Sanchez &nbsp;·&nbsp; <a href="https://jeffersonsanchez.com">jeffersonsanchez.com</a> &nbsp;·&nbsp; <a href="https://bimrock.ai" target="_blank" rel="noopener">bimrock.ai</a> &nbsp;·&nbsp; <a href="https://the3dwebcoder.com" target="_blank" rel="noopener">the3dwebcoder.com</a></p>
+    </div>
+  </footer>
+
+  <script>
+    const p = location.pathname.split('/').pop() || 'index.html';
+    document.querySelectorAll('.nav__links a').forEach(a => {
+      if (a.getAttribute('href') === p) a.setAttribute('aria-current', 'page');
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Jefferson G. Sanchez</title>
+  <meta name="description" content="Projects by Jefferson G. Sanchez — Bimrock AI, The 3D Web Coder, The Union Muay Thai Boxing, Revonate, Better Builders, Refresh Construction, and Torque AI.">
+  <meta property="og:title" content="Projects — Jefferson G. Sanchez">
+  <meta property="og:description" content="Ventures and projects across construction technology, AI, and fitness — current and past.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jeffersonsanchez.com/projects">
+  <link rel="canonical" href="https://jeffersonsanchez.com/projects">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1px;
+      background: var(--border);
+    }
+    .project-card {
+      background: var(--bg-card);
+      padding: 2.25rem 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      transition: background 0.2s;
+    }
+    .project-card:hover { background: var(--bg-card-2); }
+    .project-card__header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .project-card__name {
+      font-size: 1.7rem;
+      font-weight: 400;
+      color: var(--white);
+      line-height: 1.1;
+    }
+    .project-card__desc {
+      font-size: 1.05rem;
+      color: var(--text-2);
+      line-height: 1.7;
+      flex: 1;
+    }
+    .project-card__meta {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      margin-top: auto;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+    }
+    .project-card__dates {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.58rem;
+      letter-spacing: 0.1em;
+      color: var(--text-3);
+      margin-left: auto;
+    }
+    @media (max-width: 680px) {
+      .projects-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">JGS</a>
+      <div class="nav__links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="bio.html">Bio</a>
+        <a href="projects.html">Projects</a>
+        <a href="press.html">Press</a>
+        <a href="links.html">Links</a>
+        <a href="social.html">Social</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container--wide">
+
+      <header class="page-header anim-fade">
+        <span class="eyebrow">Ventures &amp; Contributions</span>
+        <h1>Projects</h1>
+        <p class="lead">A record of companies founded, products built, and communities created — spanning construction technology, AI, and beyond.</p>
+      </header>
+
+      <!-- CURRENT -->
+      <div class="section-label anim-fade">Current</div>
+      <div class="projects-grid anim-fade" style="margin-bottom:1px">
+
+        <div class="project-card" style="background:var(--bg-card-2)">
+          <div class="project-card__header">
+            <h2 class="project-card__name">Bimrock AI</h2>
+            <span class="badge badge--active">Active</span>
+          </div>
+          <p class="project-card__desc">
+            AI-powered BIM automation tools for MEP engineers. Bimrock AI applies large language models and generative AI to Building Information Modeling workflows — reducing manual modeling time, accelerating coordination, and enabling engineers to focus on higher-value design decisions. Building the future of human-machine collaboration in construction.
+          </p>
+          <div class="project-card__meta">
+            <a href="https://bimrock.ai" target="_blank" rel="noopener" class="card-link">bimrock.ai →</a>
+            <span class="project-card__dates">2022 — Present</span>
+          </div>
+        </div>
+
+        <div class="project-card" style="background:var(--bg-card-2)">
+          <div class="project-card__header">
+            <h2 class="project-card__name">The 3D Web Coder</h2>
+            <span class="badge badge--active">Contributor</span>
+          </div>
+          <p class="project-card__desc">
+            Educational platform and technical blog focused on 3D web development for the architecture, engineering, and construction (AEC) industry. Covering Three.js, WebGL, BIM visualization, and related technologies. Sanchez contributes technical writing and tutorials connecting web development techniques to real-world AEC applications.
+          </p>
+          <div class="project-card__meta">
+            <a href="https://the3dwebcoder.com" target="_blank" rel="noopener" class="card-link">the3dwebcoder.com →</a>
+            <span class="project-card__dates">Ongoing</span>
+          </div>
+        </div>
+
+        <div class="project-card" style="background:var(--bg-card-2)">
+          <div class="project-card__header">
+            <h2 class="project-card__name">The Union Muay Thai Boxing</h2>
+            <span class="badge badge--active">Active</span>
+          </div>
+          <p class="project-card__desc">
+            A dedicated Muay Thai boxing gym and community founded by Sanchez. The Union is built for serious practitioners — offering professional training, authentic technique, and a community of athletes committed to the discipline. Reflects Sanchez's personal commitment to Muay Thai as both sport and lifestyle.
+          </p>
+          <div class="project-card__meta">
+            <a href="https://theunionmuaythaiboxing.com" target="_blank" rel="noopener" class="card-link">theunionmuaythaiboxing.com →</a>
+            <span class="project-card__dates">2017 — Present</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- PAST -->
+      <div class="section-label anim-fade" style="margin-top:4rem">Past Ventures</div>
+      <div class="projects-grid anim-fade">
+
+        <div class="project-card">
+          <div class="project-card__header">
+            <h2 class="project-card__name">Torque AI</h2>
+            <span class="badge badge--past">Past</span>
+          </div>
+          <p class="project-card__desc">
+            An early artificial intelligence venture targeting the construction industry. Torque AI explored machine learning applications for construction project management, data analysis, and workflow automation. A direct precursor to Bimrock AI, this company provided the technical and market insights that shaped Sanchez's current focus on MEP engineering automation.
+          </p>
+          <div class="project-card__meta">
+            <span class="project-card__dates">2020 — 2022</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card__header">
+            <h2 class="project-card__name">Revonate</h2>
+            <span class="badge badge--past">Past</span>
+          </div>
+          <p class="project-card__desc">
+            A renovation technology platform bringing software-driven transparency and efficiency to the home renovation market. Revonate addressed the endemic pain points of residential remodeling — cost overruns, scheduling delays, and miscommunication between homeowners and contractors — through product design and workflow tooling.
+          </p>
+          <div class="project-card__meta">
+            <span class="project-card__dates">2018 — 2020</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card__header">
+            <h2 class="project-card__name">Better Builders</h2>
+            <span class="badge badge--past">Past</span>
+          </div>
+          <p class="project-card__desc">
+            A workforce development and quality assurance platform for the construction trades. Better Builders brought more systematic approaches to contractor selection, performance tracking, and accountability — addressing the skilled labor quality gap that drives poor project outcomes across residential and commercial construction.
+          </p>
+          <div class="project-card__meta">
+            <span class="project-card__dates">2016 — 2018</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card__header">
+            <h2 class="project-card__name">Refresh Construction</h2>
+            <span class="badge badge--past">Past</span>
+          </div>
+          <p class="project-card__desc">
+            A residential and commercial construction services company focused on renovation and remodeling. Refresh Construction emphasized customer experience, project delivery reliability, and quality workmanship — areas where traditional contracting had long underperformed. Sanchez's first full venture in the construction space.
+          </p>
+          <div class="project-card__meta">
+            <span class="project-card__dates">2013 — 2016</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <p>© 2026 Jefferson G. Sanchez &nbsp;·&nbsp; <a href="https://jeffersonsanchez.com">jeffersonsanchez.com</a> &nbsp;·&nbsp; <a href="https://bimrock.ai" target="_blank" rel="noopener">bimrock.ai</a> &nbsp;·&nbsp; <a href="https://the3dwebcoder.com" target="_blank" rel="noopener">the3dwebcoder.com</a></p>
+    </div>
+  </footer>
+
+  <script>
+    const p = location.pathname.split('/').pop() || 'index.html';
+    document.querySelectorAll('.nav__links a').forEach(a => {
+      if (a.getAttribute('href') === p) a.setAttribute('aria-current', 'page');
+    });
+  </script>
+
+</body>
+</html>

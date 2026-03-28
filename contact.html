@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Jefferson G. Sanchez</title>
+  <meta name="description" content="Get in touch with Jefferson G. Sanchez. Book a meeting via cal.com or reach out by email.">
+  <meta property="og:title" content="Contact — Jefferson G. Sanchez">
+  <meta property="og:description" content="Book a meeting directly or get in touch by email.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jeffersonsanchez.com/contact">
+  <link rel="canonical" href="https://jeffersonsanchez.com/contact">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .contact-layout {
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 5rem;
+      align-items: start;
+    }
+    .cal-wrap {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      overflow: hidden;
+    }
+    .cal-wrap iframe {
+      display: block;
+      width: 100%;
+      height: 800px;
+      border: none;
+      background: transparent;
+    }
+    .contact-sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      position: sticky;
+      top: 70px;
+    }
+    .contact-block {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      padding: 1.75rem;
+    }
+    .contact-block__label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.58rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.85rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .contact-block__value {
+      font-size: 1.1rem;
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .contact-block__value a {
+      color: var(--text);
+      text-decoration: none;
+      border-bottom: 1px solid var(--border-2);
+      transition: color 0.15s, border-color 0.15s;
+    }
+    .contact-block__value a:hover {
+      color: var(--accent);
+      border-color: var(--accent-mid);
+    }
+    .contact-block__note {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 0.08em;
+      color: var(--text-3);
+      margin-top: 0.6rem;
+      line-height: 1.6;
+    }
+    @media (max-width: 860px) {
+      .contact-layout { grid-template-columns: 1fr; gap: 2.5rem; }
+      .contact-sidebar { position: static; }
+      .cal-wrap iframe { height: 700px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">JGS</a>
+      <div class="nav__links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="bio.html">Bio</a>
+        <a href="projects.html">Projects</a>
+        <a href="press.html">Press</a>
+        <a href="links.html">Links</a>
+        <a href="social.html">Social</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container--wide">
+
+      <header class="page-header anim-fade">
+        <span class="eyebrow">Get in Touch</span>
+        <h1>Contact</h1>
+        <p class="lead">Book time directly on my calendar or reach out by email. I'm always open to conversations about construction technology, AI, and new ventures.</p>
+      </header>
+
+      <div class="contact-layout">
+
+        <!-- CALENDAR EMBED -->
+        <div class="anim-fade anim-d1">
+          <div class="section-label" style="margin-bottom:1.5rem">Schedule a Meeting</div>
+          <div class="cal-wrap">
+            <iframe
+              src="https://cal.com/jefferson-g-sanchez"
+              width="100%"
+              height="800"
+              frameborder="0"
+              title="Book a meeting with Jefferson G. Sanchez"
+              loading="lazy"
+            ></iframe>
+          </div>
+          <p style="font-family:'DM Mono',monospace;font-size:0.6rem;letter-spacing:0.1em;color:var(--text-3);margin-top:1rem;text-transform:uppercase;">Prefer a quick chat? Book time directly above.</p>
+        </div>
+
+        <!-- SIDEBAR -->
+        <aside class="contact-sidebar anim-fade anim-d2">
+
+          <div class="contact-block">
+            <div class="contact-block__label">Email</div>
+            <div class="contact-block__value">
+              <a href="mailto:jeff.sanchez91@gmail.com">jeff.sanchez91@gmail.com</a>
+            </div>
+            <p class="contact-block__note">Best for detailed inquiries, partnerships, and press.</p>
+          </div>
+
+          <div class="contact-block">
+            <div class="contact-block__label">LinkedIn</div>
+            <div class="contact-block__value">
+              <a href="https://linkedin.com/in/jeffersonsanchez" target="_blank" rel="noopener">linkedin.com/in/jeffersonsanchez</a>
+            </div>
+            <p class="contact-block__note">Professional network and direct messages.</p>
+          </div>
+
+          <div class="contact-block">
+            <div class="contact-block__label">X / Twitter</div>
+            <div class="contact-block__value">
+              <a href="https://twitter.com/jfsnchz" target="_blank" rel="noopener">@jfsnchz</a>
+            </div>
+            <p class="contact-block__note">Quick thoughts and public conversation.</p>
+          </div>
+
+          <div class="contact-block">
+            <div class="contact-block__label">Company</div>
+            <div class="contact-block__value">
+              <a href="https://bimrock.ai" target="_blank" rel="noopener">bimrock.ai</a>
+            </div>
+            <p class="contact-block__note">For Bimrock AI product inquiries and enterprise partnerships.</p>
+          </div>
+
+          <div class="contact-block" style="border-color:var(--accent-mid);background:var(--accent-low)">
+            <div class="contact-block__label" style="border-color:var(--accent-mid)">Response Time</div>
+            <div class="contact-block__value" style="font-family:'DM Mono',monospace;font-size:0.72rem;letter-spacing:0.08em;color:var(--accent)">Typically within 24–48 hours</div>
+            <p class="contact-block__note">Miami, FL — Eastern Time (ET)</p>
+          </div>
+
+        </aside>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <p>© 2026 Jefferson G. Sanchez &nbsp;·&nbsp; <a href="https://jeffersonsanchez.com">jeffersonsanchez.com</a> &nbsp;·&nbsp; <a href="https://bimrock.ai" target="_blank" rel="noopener">bimrock.ai</a> &nbsp;·&nbsp; <a href="https://the3dwebcoder.com" target="_blank" rel="noopener">the3dwebcoder.com</a></p>
+    </div>
+  </footer>
+
+  <script>
+    const p = location.pathname.split('/').pop() || 'index.html';
+    document.querySelectorAll('.nav__links a').forEach(a => {
+      if (a.getAttribute('href') === p) a.setAttribute('aria-current', 'page');
+    });
+  </script>
+
+</body>
+</html>
